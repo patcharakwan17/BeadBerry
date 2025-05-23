@@ -1,0 +1,214 @@
+
+
+.navbar .logo{
+  font-size: 30px;
+}
+.navbar .menu{
+    margin: auto 8px;
+    text-decoration: none;
+    color: #333;
+}
+
+header .head-section{
+    display: flex;
+    justify-content: space-around;
+    height: 600px;
+    max-width: 1024px;
+    margin: auto;
+}
+header .head-section .left,
+header .head-section .right{
+    width: 50%;
+}
+header .head-section .left h1{
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+header .head-section .left{
+    text-align: left;
+    letter-spacing: 2px;
+    margin: auto;
+    padding: 3rem 3rem 3rem 5rem;
+    line-height: 27px;
+}
+header .head-section .left a.btn-shop-now {
+    text-decoration: none;
+    padding: 8px;
+    width: 235px;
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: rgb(143, 142, 142);
+    color: #333;
+}
+header .head-section .left a.btn-shop-now:hover {
+    background-color: dimgrey;
+    color: #fff;
+    transition: 0.3s;
+}
+header .head-section .right img{
+    margin: 6rem auto;
+}
+
+
+.section-2.section-about {
+    height: 450px;
+    position: relative;
+}
+.section-2 .section-about-box{
+    max-width: 767px;
+    height: auto;
+    text-align: center;
+    font-size: 16px;
+    line-height: 27px;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.section-2 .section-about-box h2{
+    font-size: 32px;
+    font-weight: 400;
+    margin: 5px auto 22px;
+}
+.section-2 .section-about-box h3{
+    font-size: 32px;
+    font-weight: 400;
+    margin: 5px auto 32px;
+}
+
+.section-3{
+    background-image: url("../../public/images/middle-1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: fit-content;
+    min-height: 660px;
+    padding-top: 8rem;
+    text-align: center;
+    font-size: 16px;
+    padding-bottom: 7rem;
+}
+.section-3 h2{
+    font-size: 32px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.section-3 .title{
+    max-width: 767px;
+    margin: .5rem auto 2.5rem;
+}
+.section-3 .products {
+    display: flex;
+    justify-content: space-around;
+    max-width: 767px;
+    margin: auto;
+    margin-top: 5rem;
+}
+.section-3 .product {
+    max-width: 210px;
+    width: 100%;
+    background-color: #fff;
+    border: #eee;
+    box-shadow: 2px 2px 9px #ccc;
+    border-radius: 8px;
+    padding: 3rem 1rem;
+    cursor: pointer;
+}
+.section-3 .product:hover {
+    background-color: #333;
+    border: #eee;
+    box-shadow: 3px 3px 10px #aaa;
+    transition: 0.3s;
+    color: #fff;
+}
+.section-3 .product h3{
+    min-height: 50px;
+}
+.icon-box{
+    min-height: 90px;
+}
+
+
+.section-4{
+    text-align: center;
+}
+.section-4 h2{
+    font-size: 32px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.reviews-box{
+    max-width: 1024px;
+    margin: auto;
+}
+.review{
+    text-align: center;
+    background-color: #fff;
+    border: #eee;
+    box-shadow: 2px 2px 9px #ccc;
+    border-radius: 8px;
+    padding: 3rem 1rem 2rem;
+}
+.review .detail{
+    max-width: 210px;
+    margin: auto;
+    text-align: center;
+}
+.review .name {
+    font-size: 24px;
+}
+.swiper.swiper-initialized.swiper-horizontal.mySwiper {
+    min-height: 320px;
+}
+
+
+.cta {
+    margin-bottom: 5rem;
+}
+.cta h2{
+    font-size: 32px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 8rem auto 3rem;
+    text-align: center;
+}
+.icon-social {
+    display: inline-block;
+    margin: 2px 1rem;
+    width: 40px;
+    padding: .5rem 1rem .5rem;
+}
+.icon-social svg{
+}
+.socials{
+    margin: auto;
+    width: 360px;
+    text-align: center;
+}
+.socials svg{
+    background: transparent;
+    padding: .5rem 1rem .5rem;
+    margin: 1rem;
+    width: 100%;
+    width: 40px;
+    height: auto;
+}
+
+.socials svg:hover{
+    cursor: pointer;
+    background: #f8b7b5;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+.cta .socials{
+    background-image: url("../../public/images/bg-social.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: fit-content;
+    width: 400px;
+    padding-right: 5rem;
+}
