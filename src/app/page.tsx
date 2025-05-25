@@ -119,6 +119,11 @@ export default function Home() {
       <div className="reviews-box">
         <Swiper
           slidesPerView={3}
+          breakpoints={{
+            768: {
+              slidesPerView: 2,
+            }
+          }}
           spaceBetween={30}
           pagination={{
             clickable: true,

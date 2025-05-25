@@ -281,3 +281,123 @@ header .head-section .right img{
     transform: translateY(-0%);
   }
 }
+
+@media (max-width: 992px) {
+    header .head-section {
+        display: block;
+        height: auto;
+        max-width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+    header .head-section .left,
+    header .head-section .right {
+        width: 100%;
+        margin: -5rem auto 0;
+    }
+    header .head-section .left {
+        padding: 7rem 0 1rem;
+        width: 100%;
+    }
+    .section-2.section-about {
+        height: 245px;
+    }
+    .products-section.products-section-right {
+        right: -30px;
+    }
+    .products-section .slide {
+        width: 135px;
+        height: auto;
+    }
+
+    .section-3 .products {
+        display: block;
+        max-width: 100%;
+    }
+    .section-3 .product {
+        max-width: calc(100% - 100px);
+        margin: 1rem auto;
+    }
+    .section-3{
+        background-position: top;
+            margin-top: -6rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .products-section .slide {
+        width: 85px;
+        height: auto;
+    }
+    .section-2 .section-about-box h2,
+    .section-2 .section-about-box h3{
+        font-size: 20px;
+        margin: 5px auto 12px;
+    }
+    .section-2 .section-about-box p {
+        font-size: 14px;
+        width: calc(100% - 150px);
+        margin: auto;
+    }
+    .cta .socials {
+        width: 100%;
+        padding-right: 0;
+        margin: auto;
+    }
+    .icon-social{
+        padding: 0;
+        width: auto;
+    }
+    header .head-section .left h1 {
+        font-size: 20px;
+    }
+    header .head-section .left p{
+        font-size: 14px;
+    }
+    header .head-section .right img {
+        width: calc(100% - 100px);
+        height: auto;
+    }
+    .section-2.section-about {
+        height: 400px;
+    }
+    .section-3 h2 {
+        font-size: 20px;
+    }
+    .section-3 .title {
+        max-width: calc(100% - 100px);
+        margin: 1rem auto 1rem;
+        font-size: 14px;
+    }
+    .cta h2 {
+        font-size: 20px;
+        margin: 5rem auto 2rem;
+    }
+
+    .navbar .menu {
+        font-size: 12px;
+        margin: auto 3px;
+        padding: .5rem;
+    }
+    .navbar .logo {
+        font-size: 20px;
+        margin: .5rem 1rem 0;
+    }
+
+    .socials svg{
+        margin: 0;
+    }
+    .products-section {
+        z-index: -1;
+        position: absolute;
+        top: -9rem;
+        margin: auto;
+    }
+    .products-section.products-section-right {
+        margin: auto 0;
+        right: 0;
+    }
+    #sect2title {
+        width: calc(100% - 100px);
+    }
+}
