@@ -118,10 +118,10 @@ export default function Home() {
 
       <div className="reviews-box">
         <Swiper
-          slidesPerView={3}
+          slidesPerView={2}
           breakpoints={{
             768: {
-              slidesPerView: 2,
+              slidesPerView: 3,
             }
           }}
           spaceBetween={30}
