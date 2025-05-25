@@ -7,6 +7,15 @@
     margin: auto 8px;
     text-decoration: none;
     color: #333;
+    padding: .5rem 1rem;
+}
+.navbar a.menu:hover{
+    color: #532b2a;
+    background-color: #ffc6c4;
+    transition: 0.4s;
+    padding: .5rem 1rem;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px #aaa;
 }
 
 header .head-section{
@@ -65,10 +74,10 @@ header .head-section .right img{
     font-size: 16px;
     line-height: 27px;
     margin: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
+    top: 60%;
+    left: 0;
+    transform: translate(0, -50%);
 }
 .section-2 .section-about-box h2{
     font-size: 32px;
@@ -79,6 +88,16 @@ header .head-section .right img{
     font-size: 32px;
     font-weight: 400;
     margin: 5px auto 32px;
+}
+#sect2title{
+    position: absolute;
+    top: -400px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 450px;
+}
+#sect2title h2{
+    position: relative;
 }
 
 .section-3{
@@ -182,8 +201,6 @@ header .head-section .right img{
     width: 40px;
     padding: .5rem 1rem .5rem;
 }
-.icon-social svg{
-}
 .socials{
     margin: auto;
     width: 360px;
@@ -211,4 +228,56 @@ header .head-section .right img{
     height: fit-content;
     width: 400px;
     padding-right: 5rem;
+}
+
+
+.products-section {
+    z-index: -1;
+    position: absolute;
+    top: -9rem;
+    margin: auto 2rem;
+}
+.products-section.products-section-right {
+    z-index: -1;
+    position: absolute;
+    top: -9rem;
+    margin: auto 2rem;
+    right: 1rem;
+}
+.products-section .slider {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  max-height: 730px;
+}
+
+.products-section .slide-track {
+  animation: scroll 20s linear infinite;
+}
+.products-section.products-section-right .slide-track {
+  animation: scroll2 20s linear infinite;
+}
+
+.products-section .slide {
+  width: 200px;
+  margin-right: 2rem;
+  display: block;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes scroll2 {
+  0% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(-0%);
+  }
 }

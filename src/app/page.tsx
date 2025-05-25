@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Autoplay } from 'swiper/modules';
@@ -9,8 +9,28 @@ import { Pagination, Autoplay } from 'swiper/modules';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
+import Products from "@/components/pages/Products";
 
 export default function Home() {
+  const sect2title = useRef<HTMLDivElement>(null); 
+
+    useEffect(() => {
+    const handleScroll = () => {
+      if (!sect2title.current) return;
+
+      const valueScrollY = window.scrollY;
+ 
+      if(valueScrollY >= 200){
+        sect2title.current.style.top = "-100px";
+        sect2title.current.style.transitionDuration = '1.25s';
+      }
+
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <>
     <div className="navbar">
@@ -34,19 +54,27 @@ export default function Home() {
           <a href="#shop" className="btn btn-shop-now">ช้อปเลย</a>
         </div>
         <div className="right">
-          <Image alt="product" src="/images/product.png" width={450} height={469} />
+          <Image alt="product" src="/images/me-2-done.png" width={450} height={469} />
         </div>
       </div>
     </header>
 
     <div id="aboutme" className="section-2 section-about">
+      <div className="products-section">
+        <Products />
+      </div>
       <div className="section-about-box">
-        <h2>สินค้า handmade ที่ทำด้วยใจ</h2>
-        <h3>ไม่เน้นกำไร เน้นขายเอาสังคม</h3>
+        <div id="sect2title" ref={sect2title}>
+          <h2>สินค้า handmade ที่ทำด้วยใจ</h2>
+          <h3>ไม่เน้นกำไร เน้นขายเอาสังคม</h3>
+        </div>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
           Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, 
           when an unknown printer took a galley of type and scrambled it to make a type specimen book.
         </p>
+      </div>
+      <div className="products-section products-section-right">
+        <Products />
       </div>
     </div>
 

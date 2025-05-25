@@ -51,6 +51,7 @@ header {
   position: relative;
   margin-top: -75px;
   padding-top: 100px;
+  z-index: 2;
 }
 
 .navbar{
